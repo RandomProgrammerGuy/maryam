@@ -18,19 +18,19 @@ def print_main_menu():
 
 # -- PRINT CALCULATION MENU ITEMS -- #
 def print_calculation_menu():
-    current_menu = 'calc'
     print('\n- Calculation Mode')
+    current_menu = 'calc'
     return('Type your calculation below:')
 
 # -- PRINT GRAPH MENU ITEMS -- #
 def print_graph_menu():
-    current_menu = 'graph'
     print('\n- Graph Mode')
+    current_menu = 'graph'
     return('Write graph equation below:')
 
 def print_solver_menu():
-    current_menu = 'solver'
     print('\n- Solver Mode')
+    current_menu = 'solver'
     return('Write your equation below:')
 
 # -- ANALYZE USER INPUT -- #
@@ -82,8 +82,11 @@ def take_input(userinput):
             
 print('\nWelcome to Maryam, created by Parsa Farjam \nCurrent Version: 0.0.0 ')
 
+print(print_main_menu())
+user_in = input()
+take_input(user_in)
+
 # -- LOOP TERMINATES WHEN USER ENTERS QUIT COMMAND -- #
-while True:
-    print(print_main_menu())
-    user_in = input()
-    take_input(user_in)
+#while True:
+#    user_in = input()
+#    take_input(user_in)
